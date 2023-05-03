@@ -1,0 +1,35 @@
+.cart_item_card{
+    background-color: black;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.cart_item_card img{
+    width: 100px;
+    height: 100px;
+}
+i{
+    color: white;
+}
+i:hover{
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.cart_item_card figcaption p{
+    color: white;
+}
+.cart_item_card strong{
+    color: gray;
+}
+
+.cart_item_card span{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color:orange;
+    margin: 10px;
+}
