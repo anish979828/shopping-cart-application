@@ -1,0 +1,32 @@
+.cart_popup{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.cart_popup i{
+    margin: 10px;
+    font-size: 2rem;
+}
+i:hover{
+    cursor: pointer;
+
+}
+span{
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    right: 25px;
+    top: 25px;
+    position: absolute;
+}
+.cart{
+    background-color: black;
+    width: 100vh;
+}

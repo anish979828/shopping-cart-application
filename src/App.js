@@ -1,9 +1,10 @@
-import ProductItemCard from "./components/ProductItemCard";
+import CartButton from "./components/CartPopup";
 
 
 function App() {
   return (
-    <ProductItemCard/>
+    <CartButton />
+   
   );
 }
 
