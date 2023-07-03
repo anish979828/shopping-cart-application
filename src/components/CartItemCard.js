@@ -1,24 +1,45 @@
-import cartstyles from "./cartstyles.css";
-const CartItemCard = () => {
+// import cartstyles from "./cartstyles.css";
+
+import { useState } from "react";
+
+const CartItemCard = (props) => {
+
+    const { title,removeCartCard,src,description,price,handleTotal} = props;
+
+    const [quantity,setQuantity] = useState(1);
+
+    const handleDecrease = (addOn) => {
+      handleTotal(addOn);
+      let newQuantity = quantity - 1;
+      setQuantity(newQuantity);
+    }
+
+    const handleIncrease = (addOn) => {
+      handleTotal(addOn,"increase")
+      let newQuantity = quantity + 1;
+      setQuantity(newQuantity);
+    }
+
     return (
         <div className="cart_item_card">
             <figure>
-                <img src={require("./img1.jpeg")}></img>
+                <img src={require(`../products/${src}.jpeg`)}></img>
             </figure>
             <figcaption>
-                <p>Basic Cactus White T-shirt</p>
-                <strong>X|Wine</strong> <br>
+                <p>{title}</p>
+                <strong>{description}</strong> <br>
                 </br>
-                <strong>Quantity:1</strong>
+                <strong>Quantity:{quantity}</strong>
             </figcaption>
             <div>
-              <i class="fa-solid fa-xmark"></i>
-              <p>$13.25</p>
-              
-              <span>-</span>
-              <span>+</span>
+              <p>${price}</p>
+           {quantity < 2 ?  <i onClick={() => {
+              removeCartCard(title)
+            }} class="fa-solid fa-trash"></i> : <button onClick={() => handleDecrease(price)}>-</button>}
+              <button onClick={() => handleIncrease(price)}>+</button>
             </div>
         </div>
+
     )
 }
 export default CartItemCard;

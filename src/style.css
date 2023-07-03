@@ -1,0 +1,156 @@
+/* main content of page  */
+h1{
+    text-align: center;
+}
+.cart p {
+    color: orange;
+}
+
+.main{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+button:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+
+}
+.filter button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.product_item_card{
+    flex: 0 1 30%;
+}
+
+/* Aside content  */
+
+
+.aside button{
+    border-radius: 50%;
+}
+.aside button:hover{
+    border: 1px solid black;
+}
+
+/* Cart_button style  */
+.cart_popup{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.cart_popup i{
+    color: orange;
+    margin: 10px;
+    font-size: 2rem;
+}
+i:hover{
+    cursor: pointer;
+}
+.cart_popup span{
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    right: 25px;
+    top: 25px;
+    position: absolute;
+}
+h2{
+    color: red;
+}
+
+.cart{
+    right: 10px;
+    position: fixed;
+    background-color: black;
+    width: 30%;
+    height: 100vh;
+}
+.cart-card{
+  
+    height: 500px;
+    overflow: scroll;
+}
+
+/* Cart_Card_Style  */
+
+.cart_item_card{
+    border: 1px solid white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.cart_item_card img{
+    width: 100px;
+    height: 100px;
+}
+i{
+    color: white;
+}
+
+.cart_item_card figcaption p{
+    color: white;
+}
+.cart_item_card strong{
+    color: gray;
+}
+
+.cart_item_card span{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color:orange;
+    margin: 10px;
+}
+.cart-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.cart p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/* checkout  */
+.cart-checkout{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* width: 100vw; */
+    background-color: white;
+    height: 30%;
+    /* position: fixed; */
+}
+.cart-checkout button{
+    text-align: center;
+}
+.cart-checkout p{
+    font-size: 24px;
+    color: red;
+}
+
+
